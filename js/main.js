@@ -49,6 +49,12 @@ cancelBtn.addEventListener("click", () => {
   document.getElementById("distanceInput").value = "";
   document.getElementById("ageInput").value = "";
 
+  document.getElementById("nameTicket").innerHTML = "Unknown";
+  document.getElementById("offer").innerHTML = "Unknown";
+  document.getElementById("cabinNumber").innerHTML = "Unknown";
+  document.getElementById("cpCode").innerHTML = "Unknown";
+  document.getElementById("cost").innerHTML = "Unknown";
+
   if (ticket.className !== "d-none") {
     ticket.className = "d-none";
   }
