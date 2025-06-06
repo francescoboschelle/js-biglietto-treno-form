@@ -16,9 +16,131 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
+    <main>
+      <div class="container">
+        <section>
+          <h2 class="text-white fw-bold mt-3 text-center">
+            CALCOLA IL PREZZO DEL TUO BIGLIETTO
+          </h2>
+          <div class="card mt-3 shadow">
+            <div class="card-body text-center px-5">
+              <form action="./js/main.js">
+                <div class="row primary-color mb-3">
+                  <div class="col-4">
+                    <div class="mb-3">
+                      <label for="nameInput" class="form-label"
+                        >Nome Cognome</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        id="nameInput"
+                        placeholder="John Smith"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="mb-3">
+                      <label for="distanceInput" class="form-label"
+                        >Km da percorrere</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="distance"
+                        id="distanceInput"
+                        placeholder="0"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="mb-3">
+                      <label for="ageInput" class="form-label"
+                        >Fascia d&apos;etá</label
+                      >
+                      <select
+                        class="form-select"
+                        name="age"
+                        id="ageInput"
+                        required
+                      >
+                        <option value="adult" selected>Maggiorenne</option>
+                        <option value="minor">Minorenne</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex gap-3 justify-content-center align-items-center"
+                >
+                  <button
+                    type="submit"
+                    class="btn btn-light primary-color fw-bold"
+                  >
+                    Genera
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-light primary-color fw-bold"
+                  >
+                    Cancella
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="d-none">
+          <h2 class="text-white fw-bold mt-3 text-center">IL TUO BIGLIETTO</h2>
+          <div class="card mt-3 shadow">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">DETTAGLIO PASSEGGERI</h5>
+              <div class="container">
+                <div class="row border border-end-0 border-secondary">
+                  <div class="col-4 bg-secondary p-4">
+                    <h5 class="fw-bold">NOME PASSEGGERO</h5>
+                    <p class="fw-bold fs-5 mb-0">Unknown</p>
+                  </div>
+                  <div class="col-8 p-3">
+                    <div class="table-responsive">
+                      <table class="table table-borderless mb-0">
+                        <thead>
+                          <tr>
+                            <th scope="col">Offerta</th>
+                            <th scope="col">Carrozza</th>
+                            <th scope="col">Codice CP</th>
+                            <th scope="col">Costo biglietto</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">Unknown</td>
+                            <td>Unknown</td>
+                            <td>Unknown</td>
+                            <td>Unknown</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

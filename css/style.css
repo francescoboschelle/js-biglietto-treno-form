@@ -1,0 +1,15 @@
+:root {
+  --primary-color: rgb(185, 20, 80);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.border-primary {
+  border-color: var(--primary-color);
+}
