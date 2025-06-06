@@ -9,7 +9,3 @@ body {
 .primary-color {
   color: var(--primary-color);
 }
-
-.border-primary {
-  border-color: var(--primary-color);
-}
